@@ -1,5 +1,7 @@
+i=1
 cat myscript5.bash |
 while read input
 do
-	echo "Line number is: $input"
+	echo "$i: $input"
+	((i++))
 done
